@@ -1,0 +1,303 @@
+*{
+     margin:0;
+     padding:0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 130vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.804);
+}
+#nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    width: 100%;
+}
+
+#left{
+    display: flex;
+    padding-left: 60px;
+    align-items: center;
+    margin-top: 25px;
+    color: white;
+    gap: 5px;
+}
+#left h4{
+    align-items: center;
+    text-transform: uppercase;
+}
+#middle{
+    position: absolute;
+
+   
+    display: flex;
+   
+    gap :40px;
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+#middleleft{
+    display: flex;
+    color: white;
+ align-items: center;
+margin-top: 25px;
+ font-size: 16px;
+ font-weight: 100;
+    gap: 15px;
+    text-transform: capitalize;
+
+}
+#middle img{
+    height: 50px;
+    margin-top: 25px;
+  
+}
+#middleright{
+    display: flex;
+    font-weight: 100;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+ margin-top: 25px;
+    gap: 15px;
+    text-transform: capitalize;
+
+}
+
+#right{
+    color: white;
+    padding-right: 60px;
+    display: flex;
+  
+    align-items: center;
+    margin-top: 25px;
+
+}
+#centre{
+    color: white;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#centremiddle{
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    align-items: center;
+   left: 52%;
+   top: 100px;
+    transform: translate(-50%,0);
+    background-image: url('mingjun-liu-gMiRIO-GLtM-unsplash.jpg');
+    background-position: center;
+     background-size: cover;
+     border-top-left-radius: 200px;
+     border-top-right-radius: 200px;
+     opacity: 0.5;
+
+}
+#centremiddle img{
+    overflow: hidden;
+    position: absolute;
+    height: 625px;
+    transform: translate(34%,0);
+    opacity: 0.9;
+}
+#centreleft{
+margin-top: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+       justify-content: space-between;
+       gap: 50px;
+}
+#centreleft h1{
+    flex-direction: column;
+    position: absolute;
+ font-size: 3vw;
+ font-weight: 750;
+ width: 400px;
+bottom: 4ex;
+ margin-left: 60px;
+
+
+}
+span{
+    color: red;
+    font-weight: 600;
+}
+#centreleft p{
+    flex-direction: column;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+   
+    width: 200px;
+    margin-left: 60px;
+    padding-top: 120px;
+    
+ 
+}
+#centreleft button{
+    flex-direction: column;
+    background-color: red;
+    width: 100px;
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 120px;
+
+}
+#centreright{
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 60px;
+    margin-top: 140px;
+    flex-direction: column;
+
+}
+#centreright h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    opacity: 0.5;
+}
+#centreright p{
+    text-transform: capitalize;
+    font-size: 18px;
+    opacity: 0.2;
+}
+#centreright #one{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+   
+    border-bottom: 0.2px solid gray;
+}
+#one #text{
+    display: flex;
+    flex-direction: column;
+   display: none;
+    overflow: hidden;
+}
+
+#centreright #two{
+    padding-top: 18px;
+    border-bottom: 0.1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+#centreright #three{
+    padding-top: 18px;
+    border-bottom: 0.1px solid gray;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+
+@media (max-width:600px) {
+    #nav{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        height:80px;
+        width: 100%;
+    }
+    #middleleft{
+        
+    
+       
+        display: none;
+       
+    }
+    #middleright{
+        display: none;
+    }
+    #middle img{
+        height: 50px;
+        margin-top: 25px;
+        padding-left: 25px;
+      
+    }
+    #centremiddle{
+        position: absolute;
+        height: 400px;
+        width: 350px;
+        align-items: center;
+       left: 52%;
+       top: 100px;
+        transform: translate(-50%,0);
+        background-image: url('mingjun-liu-gMiRIO-GLtM-unsplash.jpg');
+        background-position: center;
+         background-size: cover;
+         border-top-left-radius: 200px;
+         border-top-right-radius: 200px;
+         opacity: 0.5;
+    
+    }
+    #centremiddle img{
+        overflow: hidden;
+        position: absolute;
+        height: 425px;
+        transform: translate(60%,0);
+        opacity: 0.9;
+    }
+    #centreleft{
+        margin-top: 400px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+               justify-content: space-between;
+               gap: 50px;
+        }
+        #centreleft h1{
+
+            position: absolute;
+         font-size: 12vw;
+         font-weight: 750;
+         width: 1200px;
+        bottom: 4ex;
+        opacity: 4;
+     
+         margin-left: 30px;
+        
+        
+        }
+        span{
+            color: red;
+            font-weight: 600;
+        }
+        #centreleft p{
+          
+            display: none;
+        }
+        #centreleft button{
+            display: none;
+           
+        }
+        #centreright{
+            position: absolute;
+            display: flex;
+            right: 0;
+            margin-right: 30px;
+            margin-top: 510px;
+            flex-direction: column;
+        
+        }
+}
